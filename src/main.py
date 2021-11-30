@@ -17,7 +17,7 @@ from reconnaissance import reconnaissance_chiffre, lecture_modeles
 if __name__ == '__main__':
 
     # Variables utiles
-    path_to_assets = '../assets/'
+    path_to_assets = 'C:/Users/etoubleo/Bureau/tp2-reconnaissance-chiffres-tp2_etoubleau-etienne_boumhidi-main/assets/'
     plt.ion() # Mode interactif de matplotlib our ne pas bloquer l'éxécutions lorsque l'on fait display
 
     #==============================================================================
@@ -30,25 +30,25 @@ if __name__ == '__main__':
     #==============================================================================
     # Binarisation de l'image et affichage
     #==============================================================================
-    S = 70
+    S = 150
     image_binarisee = image.binarisation(S)
     image_binarisee.display("Image binarisee")
-
-    #==============================================================================
-    # Localisation de l'image et affichage
-    #==============================================================================
+#
+#    #==============================================================================
+#    # Localisation de l'image et affichage
+#    #==============================================================================
     image_localisee = image_binarisee.localisation()
     image_localisee.display("Image localisee")
 
-    #==============================================================================
-    # Redimensionnement de l'image et affichage
-    #==============================================================================
-    image_resizee = image_localisee.resize(100, 500)
+##    #==============================================================================
+##    # Redimensionnement de l'image et affichage
+##    #==============================================================================
+    image_resizee = image_localisee.resize(160, 700)
     image_resizee.display("Image redimensionee")
 
-    #==============================================================================
-    # Lecture modeles et reconnaissance
-    #==============================================================================
+##    #==============================================================================
+##    # Lecture modeles et reconnaissance
+##    #==============================================================================
     liste_modeles = lecture_modeles(path_to_assets)
     chiffre = reconnaissance_chiffre(image, liste_modeles, 70)
     print("Le chiffre reconnu est : ", chiffre)
