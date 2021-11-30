@@ -1,11 +1,14 @@
 import sys
-sys.path.append('../src')
-sys.path.append('./src')
+sys.path.append('C:/Users/etoubleo/Bureau/tp2-reconnaissance-chiffres-tp2_etoubleau-etienne_boumhidi-main/src/')
+sys.path.append('C:/Users/etoubleo/Bureau/tp2-reconnaissance-chiffres-tp2_etoubleau-etienne_boumhidi-main/src/')
+sys.path.append('../src/')
+sys.path.append('../src/')
 from image import Image
 import numpy as np
 import unittest
 from reconnaissance import lecture_modeles, reconnaissance_chiffre
 
+#path_to_assets = 'C:/Users/etoubleo/Bureau/tp2-reconnaissance-chiffres-tp2_etoubleau-etienne_boumhidi-main/assets/'
 path_to_assets = '../assets/'
 
 class Test_reconnaissance_chiffre(unittest.TestCase):

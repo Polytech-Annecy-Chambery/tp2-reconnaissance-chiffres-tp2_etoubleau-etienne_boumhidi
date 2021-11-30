@@ -1,12 +1,15 @@
 import sys
-sys.path.append('../src')
-sys.path.append('./src')
+sys.path.append('C:/Users/etoubleo/Bureau/tp2-reconnaissance-chiffres-tp2_etoubleau-etienne_boumhidi-main/src/')
+sys.path.append('C:/Users/etoubleo/Bureau/tp2-reconnaissance-chiffres-tp2_etoubleau-etienne_boumhidi-main/src/')
+sys.path.append('../src/')
+sys.path.append('../src/')
 from image import Image
 import numpy as np
 from numpy.testing import assert_almost_equal
 import unittest
 import numbers
 
+#path_to_assets = 'C:/Users/etoubleo/Bureau/tp2-reconnaissance-chiffres-tp2_etoubleau-etienne_boumhidi-main/assets/'
 path_to_assets = '../assets/'
 
 class Test_Image_binarisation(unittest.TestCase):
